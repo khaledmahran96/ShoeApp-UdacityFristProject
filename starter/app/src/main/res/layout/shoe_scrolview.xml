@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shoeItemView"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/shoeName_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:fontFamily="@font/roboto"
+            android:text="@{@string/shoeName_quato(shoeItemView.name)}"
+            android:textSize="@dimen/welcome2_size"
+            app:layout_constraintBottom_toTopOf="@+id/companyName_text"
+            app:layout_constraintEnd_toStartOf="@+id/shoeSize_text"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/shoeSize_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:fontFamily="@font/roboto"
+            android:textSize="@dimen/welcome2_size"
+            app:layout_constraintBaseline_toBaselineOf="@+id/shoeName_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/shoeName_text" />
+
+        <TextView
+            android:id="@+id/companyName_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:fontFamily="@font/roboto"
+            android:text="@{@string/shoeCompany_quato(shoeItemView.company)}"
+            android:textSize="@dimen/welcome2_size"
+            app:layout_constraintBottom_toTopOf="@+id/shoeDescription_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoeName_text" />
+
+        <TextView
+            android:id="@+id/shoeDescription_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:fontFamily="@font/roboto"
+            android:text="@{@string/shoeDescription_quato(shoeItemView.description)}"
+            android:textSize="@dimen/welcome2_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/companyName_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_info">Login Information</string>
+    <string name="loging_button">Login</string>
+    <string name="signin_button">Sign In</string>
+    <string name="email_hint">E-mail:</string>
+    <string name="pass_hint">Password:</string>
+    <string name="welcome_text">Welcome!!</string>
+    <string name="welcome2_text">Welcome to Shoe Store where you can sell yout product to the whole world!!</string>
+    <string name="next_button">Next</string>
+    <string name="instruction_text">How to use the app!!</string>
+    <string name="instruction2_text">You can add your product by pressing the add button and fil the fields for the product informatin!!</string>
+    <string name="shoe_name">Shoe name:</string>
+    <string name="shoe_company">Shoe company:</string>
+    <string name="shoe_size">Shoe size:</string>
+    <string name="shoe_description">Shoe description:</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="save_button">Save</string>
+    <string name="login_label">Login Menu</string>
+    <string name="welcome_label">Welcome</string>
+    <string name="instruction_label">Instructions</string>
+    <string name="list_label">Shoes List</string>
+    <string name="logout_menu">Logout</string>
+    <string name="shoeName_quato">Name: %s</string>
+    <string name="shoeSize_quato">Size: %s</string>
+    <string name="shoeCompany_quato">Company: %s</string>
+    <string name="shoeDescription_quato">Description: %s</string>
+    <string name="shoeDetail_frag">Shoe Details</string>
+
+</resources>

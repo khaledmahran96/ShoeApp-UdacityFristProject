@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="login_text_size">24sp</dimen>
+    <dimen name="welcome_size">30sp</dimen>
+    <dimen name="welcome2_size">20sp</dimen>
+    <dimen name="shoe_element_font">16sp</dimen>
+
+</resources>
